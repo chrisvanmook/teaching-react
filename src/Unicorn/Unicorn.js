@@ -2,7 +2,7 @@ import React, {Component, PureComponent} from 'react'
 
 class Unicorn extends Component {
   componentDidUpdate(prevProps, prevState, snapshot) {
-    alert(`Do I really need to update?, now the name is: ${prevProps.name}`)
+    alert(`I updated! My previous props where: ${prevProps.name}`)
   }
   render() {
     const { name, getUnicornHowl, amount } = this.props
